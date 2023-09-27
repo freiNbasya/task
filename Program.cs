@@ -1,7 +1,11 @@
 ﻿using Newtonsoft.Json;
 using System.Net.Http;
 
-
+class UsersResponse
+{
+    public int total;
+    public List<LastSeenUsers> data;
+};
 class LastSeenUsers
 {
     public string userId;
